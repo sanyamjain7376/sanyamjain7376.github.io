@@ -1,0 +1,96 @@
+.network_calculator{
+    height: calc(100% - 15px);
+    position: absolute;
+}
+
+.network-calculator{
+    display: block;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    width: 100%;
+}
+
+.network-calculator .drag {
+    position: absolute;
+}
+
+.network-calculator .drag .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px solid #00baff;
+    padding: 9px 7px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.network-calculator .drag .circle text{
+    width: 120px;
+    text-align: center;
+    position: absolute;
+    left: -55%;
+    top: 65px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.network-calculator .drag .circle .icon.endpoint {
+    background: url(../images/icon_endpoint.png) no-repeat 0 0;
+}
+
+.network-calculator .drag .circle .icon.network {
+    background: url(../images/endpoint-delete.png) no-repeat 0 0;
+}
+
+.network-calculator .drag .circle .icon.global {
+    height: 41px;
+    margin: -2px auto;
+    width: 28px;
+    background-size: 100% auto;
+}
+
+#container_div{
+    width: 100%;
+    height: calc(100% - 40px);
+    margin: 0;
+    padding: 15px 10px 15px 0;
+}
+
+.network-calculator .dd_icon .cloud text {
+       text-align: center;
+    position: absolute;
+    top: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    white-space: nowrap;
+    width: 88px;
+    left: 0px;
+}
+
+.endpoint-delete {
+    background: url(../images/endpoint-delete.png) no-repeat 0 0;
+    position: absolute;
+    right: -8px;
+    top: -1px;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    display:none;
+}
+
+.line-delete {
+    background: url(../images/endpoint-delete.png) no-repeat 0 0;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    z-index: 202;
+    display: none;
+}
+
+.line{
+   cursor: pointer !important;
+}
